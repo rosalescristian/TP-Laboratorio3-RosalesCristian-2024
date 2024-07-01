@@ -88,14 +88,18 @@ function createPropertyCard(imageSrc, imageAlt, title, description, price, wc, p
 
 function createBlogPost(imageSrc, title, date, author, description) {
     return `
-        <article class="blog-post">
-            <div class="blog-texto">
-                <h4>${title}</h4>
-                <img src="./images/${imageSrc}" alt="${title}">
-                <h5>Escrito el: <span>${date}</span> por <span>${author}</span></h5>
-                <p>${description}</p>    
+        <div class="container">
+            <div class="row my-5 border bg-light shadow">
+                <div class="col-md-6 bg-img" style="background-image: url(./images/${imageSrc})">
+                </div>
+                <div class="col-md-6 align-self-center p-4 ">
+                    <h3 class="text-success">${title}</h3>
+                    <p class="lead">${date} por <span>${author}</span></p>
+                    <p>${description}</p>
+                    <a href="#" class="btn btn-outline-success btn-sm">Leer</a>
+                </div>
             </div>
-        </article>
+        </div>
     `;
 }
 
@@ -113,7 +117,14 @@ function loadContent() {
         ${createPropertyCard('anuncio3.jpg', 'Casa con Pileta', 'Casa Con Pileta', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ex minus? Tempora sit animi et maiores, cupiditate unde voluptas voluptates fuga nisi reiciendis nemo perferendis deserunt quidem suscipit asperiores voluptatibus!','U$S 250.000', 3, 3, 4)}
     `;
 
-    document.querySelector('.blog-tarjetas').innerHTML = `
-        ${createBlogPost('blog1.jpg', 'Terraza en el techo de tu casa', '2024/05/01', 'Cristian', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.')}
+    const blogSection = document.querySelector('.blog');
+    blogSection.innerHTML = `
+        ${createBlogPost('blog1.jpg', 'Terraza en el techo de tu casa', '2024/05/01', 'Cristian', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..')}
+        ${createBlogPost('blog2.jpg', 'Guia para la decoracion de tu hogar', '2024/07/01', 'Cristian', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.')}
+    `;
+
+    const comentariosSection = document.querySelector('.comentarios-tarjetas');
+    comentariosSection.innerHTML = `
+        <!-- Aquí puedes generar dinámicamente tus tarjetas de comentarios si lo deseas -->
     `;
 }
