@@ -4,130 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/scripts.js" defer></script>
     <link rel="icon" href="./images/logo.svg" type="image/x-icon">
     <title>Bienes Raices</title>
 </head>
 
 <body>
-
-    <header id="header">
-        <!-- el logo y los H1 y H2 los estoy inyectando desde JS-->
-        <!-- el nav bar lo estoy inyectando desde JS -->
+    <header id="header" class="bg-dark text-white d-flex flex-column justify-content-between">
+        <!-- El logo, H1, H2 y el nav bar se inyectan desde JS -->
     </header>
 
-    <section class="nosotros">
-        <h2>Mas Sobre Nosotros</h2>
-        <div class="nosotros-tarjetas">
-            <article>
-                <img src="./images/icono1.svg" alt="Icono Seguridad">    
-                <h3>Seguridad</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis a perspiciatis ducimus, cupiditate dicta distinctio pariatur ipsum dolores! Quia odio modi quis repellendus quo voluptatibus iure voluptas voluptates qui labore!</p>
-            </article>
-
-            <article>
-                <img src="./images/icono2.svg" alt="Icono Precio">
-                <h3>Mejor precio</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis a perspiciatis ducimus, cupiditate dicta distinctio pariatur ipsum dolores! Quia odio modi quis repellendus quo voluptatibus iure voluptas voluptates qui labore!</p>
-            </article>
-
-            <article>
-                <img src="./images/icono3.svg" alt="Icono Tiempo">
-                <h3>A tiempo</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis a perspiciatis ducimus, cupiditate dicta distinctio pariatur ipsum dolores! Quia odio modi quis repellendus quo voluptatibus iure voluptas voluptates qui labore!</p>
-            </article>
-        </div>
-        </section>
-
-    <section class="clasificados">
-        <h2>Casas y Departamentos en Venta</h2>
-        <div class="clasificados-tarjetas">
-            <article>
-                <img src="./images/anuncio1.jpg" alt="Casa en el Lago">
-                <h3>Casa de Lujo en el Lago</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ex minus? Tempora sit animi et maiores, cupiditate unde voluptas voluptates fuga nisi reiciendis nemo perferendis deserunt quidem suscipit asperiores voluptatibus!</p>
-                <p id="precio">U$S 350.000</p>
-                <div class="contenedor-iconos">
-                    <span><img src="./images/icono_wc.svg" alt="Banos">3</span>
-                    <span><img src="./images/icono_estacionamiento.svg" alt="Banos">3</span>
-                    <span><img src="./images/icono_dormitorio.svg" alt="Banos">4</span>
-                </div>
-                <button class="boton-grande-naranja">Ver Propiedad</button>
-            </article>
-        
-            <article>
-                <img src="./images/anuncio2.jpg" alt="Casa moderna">
-                <h3>Casa terminados de Lujo</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cupiditate, dolores voluptatibus, impedit reiciendis rerum deserunt, ad eius debitis modi quasi ullam odit magnam quis officia. Error esse voluptas consequatur?</p>
-                <p id="precio">U$S 275.000</p>
-                <div class="contenedor-iconos">
-                    <span><img src="./images/icono_wc.svg" alt="Banos">3</span>
-                    <span><img src="./images/icono_estacionamiento.svg" alt="Banos">3</span>
-                    <span><img src="./images/icono_dormitorio.svg" alt="Banos">4</span>
-                </div>
-                <button class="boton-grande-naranja">Ver Propiedad</button>
-            </article>
-
-            <article>
-                <img src="./images/anuncio3.jpg" alt="Casa con Pileta">
-                <h3>Casa Con Pileta</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore cupiditate, dolores voluptatibus, impedit reiciendis rerum deserunt, ad eius debitis modi quasi ullam odit magnam quis officia. Error esse voluptas consequatur?</p>
-                <p id="precio">U$S 250.000</p>
-                <div class="contenedor-iconos">
-                    <span><img src="./images/icono_wc.svg" alt="Banos">3</span>
-                    <span><img src="./images/icono_estacionamiento.svg" alt="Banos">3</span>
-                    <span><img src="./images/icono_dormitorio.svg" alt="Banos">4</span>
-                </div>
-                <button class="boton-grande-naranja">Ver Propiedad</button>
-            </article>
-        </div>
-        <button class="boton-verde">Ver Todas</button>
-    </section>
-
-    <section class="contacto">
-        <div class="contenido">
-            <h3>Encuentra la casa de tus suenos</h3>
-            <p>Llena el formulario de contacto y un asesor se pondra en contacto a la brevedad</p>
-            <button>Contactanos</button>
+    <section class="nosotros py-4 text-center">
+        <h2>Más Sobre Nosotros</h2>
+        <div class="nosotros-tarjetas d-flex justify-content-around">
+            <!-- Tarjetas Nosotros se inyectan desde JS -->
         </div>
     </section>
 
-    <section class="blog">
-        <h3 id="blog">Nuestro Blog</h3>
-        <!--<aside>
-            <h3 id="contenido">Comentarios</h3>
-            <article>
-                <img src="./images/quote-left-solid.svg" alt="Comillas">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit doloribus amet exercitationem modi dolor, neque animi quo repudiandae ducimus assumenda eaque repellendus id est quos ab ex atque provident optio!</p>
-                <h4>- Juan Perez</h4>
-            </article>
-        </aside>-->
-        <div class="blog-tarjetas">
-            <article class="blog-post">
-                <div class="blog-texto">
-                    <h4>Terraza en el techo de tu casa</h4>
-                    <img src="./images/blog1.jpg" alt="Terraza">
-                    <h5>Escrito el: <span>2024/05/01</span> por <span>Cristian</span></h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, consequatur saepe! Tenetur illo enim itaque id accusantium quod ullam minus! Ea fugit exercitationem quos cum recusandae nulla deserunt esse atque!</p>    
-                </div>
-            </article>
-            
-            <!--<article>
-                <h4>Guia para la decoracion de tu hogar</h4>
-                <img src="./images/blog2.jpg" alt="Piscina">
-                <h5>Escrito el: 2024/05/01 por Cristian</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, consequatur saepe! Tenetur illo enim itaque id accusantium quod ullam minus! Ea fugit exercitationem quos cum recusandae nulla deserunt esse atque!</p>
-            </article>-->
+    <section class="clasificados py-4">
+        <h2 class="text-center">Casas y Departamentos en Venta</h2>
+        <div class="clasificados-tarjetas d-flex justify-content-around">
+            <!-- Tarjetas Clasificados se inyectan desde JS -->
+        </div>
+        <button class="btn btn-success d-block mx-auto mt-3">Ver Todas</button>
+    </section>
+
+    <section class="contacto d-flex justify-content-start align-items-center text-white">
+        <div class="contenido p-3">
+            <h3>Encuentra la casa de tus sueños</h3>
+            <p>Llena el formulario de contacto y un asesor se pondrá en contacto a la brevedad</p>
+            <button class="btn btn-warning">Contactanos</button>
         </div>
     </section>
 
-    <footer id="footer">
-        <!-- el nav bar lo estoy inyectando desde JS -->
-        <!-- Copyright lo estoy inyectando desde JS -->
+    <section class="blog py-4">
+        <h3 id="blog" class="text-center">Nuestro Blog</h3>
+        <div class="blog-tarjetas d-flex justify-content-around">
+            <!-- Tarjetas del Blog se inyectan desde JS -->
+        </div>
+    </section>
+
+    <footer id="footer" class="bg-dark text-white d-flex justify-content-between align-items-center py-3">
+        <!-- El nav bar y copyright se inyectan desde JS -->
     </footer>
-    
-
 </body>
+
 </html>
