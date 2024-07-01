@@ -93,7 +93,7 @@ function createBlogPost(imageSrc, title, date, author, description) {
                 <div class="col-md-6 bg-img" style="background-image: url(./images/${imageSrc})">
                 </div>
                 <div class="col-md-6 align-self-center p-4 ">
-                    <h3 class="text-success">${title}</h3>
+                    <h3 class="text-dark">${title}</h3>
                     <p class="lead">${date} por <span>${author}</span></p>
                     <p>${description}</p>
                     <a href="#" class="btn btn-outline-success btn-sm">Leer</a>
