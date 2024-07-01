@@ -244,3 +244,18 @@ footer nav ul li a {
 footer p {
     margin-right: 40px;
 }
+
+@keyframes slide-right-to-left {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.logo {
+    animation: slide-right-to-left 1s ease forwards;
+}

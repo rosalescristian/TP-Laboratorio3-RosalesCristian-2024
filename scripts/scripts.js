@@ -22,7 +22,7 @@ function generarNavBar() {
 // Genero el resto del contenido del Header en HTML
 function generarHTMLHeader(){
     const headerHTML = `
-        <img class="logo" src="./images/logo.svg" alt="Logo Empresa">
+        <img class="logo" src="./images/logo.svg" alt="Logo Empresa" class="animado">
         <h1>Venta de Casas y Departamentos<br>Exclusivos de Lujo</h1>`;
     return headerHTML;
 }
