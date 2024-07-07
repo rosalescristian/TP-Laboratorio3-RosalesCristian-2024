@@ -18,11 +18,8 @@ a {
 }
 
 a:hover {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
+    text-decoration: underline;
 }
-
 
 p {
     font-size: 15px;
@@ -50,6 +47,7 @@ header nav ul li a {
 
 .logo {
     margin: 20px;
+    animation: slide-right-to-left 1s ease forwards;
 }
 
 /* Sección Nosotros */
@@ -92,6 +90,7 @@ section.nosotros h2 {
 .clasificados-tarjetas .card {
     margin-bottom: 20px;
 }
+
 .clasificados-tarjetas article img {
     width: 100%;
     height: auto;
@@ -109,8 +108,6 @@ section.nosotros h2 {
     margin: 10px;
     padding: 5px;
 }
-
-
 
 .contenedor-iconos {
     display: flex;
@@ -210,17 +207,13 @@ section.contacto {
 .blog h3 {
     color: black;
 }
-.comentarios {
-    width: 50%;
-    padding: 20px;
-}
 
 .bg-img {
     background-size: cover; 
     background-position: center center; 
     opacity:1; 
     min-height:300px;
-  }
+}
 
 /* Footer */
 footer {
@@ -254,8 +247,4 @@ footer p {
         transform: translateX(0);
         opacity: 1;
     }
-}
-
-.logo {
-    animation: slide-right-to-left 1s ease forwards;
 }
