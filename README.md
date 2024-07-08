@@ -10,7 +10,7 @@ Cristian Rosales
 
 ## Recomendaciones a implementar:
 ❖ Sistema que pueda adaptarse a las distintas pantallas - STATUS: DONE. <br>
-❖ Botón de  Whatsapp a la derecha inferior del sistema - STATUS: TBD. <br>
+❖ Botón de  Whatsapp a la derecha inferior del sistema - STATUS: DONE. <br>
 
 ## Adicionalmente:
 ❖ Cambiar el color de texto navbar - STATUS: DONE. <br>
